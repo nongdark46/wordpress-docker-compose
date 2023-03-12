@@ -15,7 +15,7 @@ services:
       WORDPRESS_DB_NAME: "${DB_NAME}"
       WORDPRESS_DB_USER: root
       WORDPRESS_DB_PASSWORD: "${DB_ROOT_PASSWORD}"
-      VIRTUAL_HOST: 'testwp.bc-pc.shop'
+      VIRTUAL_HOST: "${DOMAIN}"
     depends_on:
       - db
     links:
