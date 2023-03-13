@@ -25,10 +25,6 @@ services:
       - db
     links:
       - db
-networks:
-  default:
-    external:
-      name: sandbox_network
 
   wpcli:
     image: wordpress:cli
@@ -75,3 +71,7 @@ networks:
 
 volumes:
   db_data:
+networks:
+  default:
+    external:
+      name: sandbox_network
